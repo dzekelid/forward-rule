@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Forward Rule",
+	"description": "This is a repository of forward rule APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/forward-rule.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://forward-rule.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Google Compute Engine",
+			"x-api-slug": "google-compute-engine",
+			"description": "Google Compute Engine delivers virtual machines running in Googles innovative data centers and worldwide fiber network. Compute Engines tooling and workflow support enable scaling from single instances to global, load-balanced cloud computing.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Google_Compute_Engine_logo.png",
+			"humanURL": "https://cloud.google.com/compute/",
+			"baseURL": "://www.googleapis.com//compute/v1/projects",
+			"tags": "Forward Rule",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/forward-rule/master/_listings/google-compute-engine/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Forward Rule",
+	"include": [
+		{
+			"name": "Google Compute Engine",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/forward-rule/master/_listings/google-compute-engine/apis.yaml"
+		}
+	]
+}

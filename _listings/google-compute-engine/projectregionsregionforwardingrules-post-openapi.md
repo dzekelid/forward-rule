@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: Google Compute Engine
-x-complete: 1
+x-complete: 0
 info:
-  title: Compute Engine
-  description: creates-and-runs-virtual-machines-on-google-cloud-platform-
+  title: Google Compute Engine API Create Forwarding Rule
+  description: Creates a ForwardingRule resource in the specified project and region
+    using the data included in the request.
   contact:
     name: Google
     url: https://google.com
@@ -179,71 +181,17 @@ paths:
           description: OK
       tags:
       - Forward Rule
-  /{project}/regions/{region}/forwardingRules/{forwardingRule}:
-    delete:
-      summary: Delete Forwarding Rule
-      description: Deletes the specified ForwardingRule resource.
-      operationId: compute.forwardingRules.delete
-      x-api-path-slug: projectregionsregionforwardingrulesforwardingrule-delete
-      parameters:
-      - in: path
-        name: forwardingRule
-        description: Name of the ForwardingRule resource to delete
-      - in: path
-        name: project
-        description: Project ID for this request
-      - in: path
-        name: region
-        description: Name of the region scoping this request
-      responses:
-        200:
-          description: OK
-      tags:
-      - Forward Rule
-    get:
-      summary: Get Forwarding Rule
-      description: Returns the specified ForwardingRule resource.
-      operationId: compute.forwardingRules.get
-      x-api-path-slug: projectregionsregionforwardingrulesforwardingrule-get
-      parameters:
-      - in: path
-        name: forwardingRule
-        description: Name of the ForwardingRule resource to return
-      - in: path
-        name: project
-        description: Project ID for this request
-      - in: path
-        name: region
-        description: Name of the region scoping this request
-      responses:
-        200:
-          description: OK
-      tags:
-      - Forward Rule
-  /{project}/regions/{region}/forwardingRules/{forwardingRule}/setTarget:
-    post:
-      summary: Update Forwarding Rule
-      description: Changes target URL for forwarding rule. The new target should be
-        of the same type as the old target.
-      operationId: compute.forwardingRules.setTarget
-      x-api-path-slug: projectregionsregionforwardingrulesforwardingrulesettarget-post
-      parameters:
-      - in: body
-        name: body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: forwardingRule
-        description: Name of the ForwardingRule resource in which target is to be
-          set
-      - in: path
-        name: project
-        description: Project ID for this request
-      - in: path
-        name: region
-        description: Name of the region scoping this request
-      responses:
-        200:
-          description: OK
-      tags:
-      - Forward Rule
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
